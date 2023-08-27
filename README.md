@@ -58,7 +58,7 @@ This repository defines manifests for three managed control planes in the [infra
 1. Install Argo or Flux into the cluster where you installed Spaces, pointing to this folder as a source. 
 2. Directly apply the control plane manifests to your Space cluster.
 
-Once the control planes are created, Spaces will do the rest of the work syncing and keeping your control planes' desired states up to date.
+Once the control planes are created, Spaces will do the rest of the work syncing and keeping your control planes' desired states up to date, with one caveat: you need to create secrets in each control plane to provider credentials for the provider packages that get installed on each control plane. Each control plane source defines a `ProviderConfig` that references a secret with the name `upbound-provider-creds` with a key called `creds`. You need to create these.
 
 ## What you can do next
 
