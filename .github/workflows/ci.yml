@@ -8,10 +8,6 @@ on:
       - apis/**
   workflow_dispatch: {}
 
-env:
-  DOCKER_USR: ${{ secrets.DOCKERHUB_USERNAME }}
-  PACKAGE_NAME: acmeco/configuration-acme-api
-
 jobs:
   configuration:
     runs-on: ubuntu-latest
@@ -26,7 +22,6 @@ jobs:
         id: tagger
       - name: Login to Upbound Marketplace
         uses: docker/login-action@v1
-        if: env.DOCKER_USR != ''
         with:
           registry: xpkg.upbound.io
           username: ${{ secrets.XPKG_ACCESS_ID }}
@@ -40,4 +35,4 @@ jobs:
       - name: Push to Upbound Marketplace
         uses: crossplane-contrib/xpkg-action@v0.2.0
         with:
-          command: push configuration -f apis/package.xpkg xpkg.upbound.io/${PACKAGE_NAME}:${{ steps.tagger.outputs.VERSION_TAG }}
+          command: push configuration -f apis/package.xpkg xpkg.upbound.io/${env.PACKAGE_NAME}:${{ steps.tagger.outputs.VERSION_TAG }}
