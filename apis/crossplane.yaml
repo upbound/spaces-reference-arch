@@ -1,0 +1,28 @@
+apiVersion: meta.pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: configuration-acme-api
+  annotations:
+    meta.crossplane.io/maintainer: Craig Wilhite <craig@upbound.io>
+    meta.crossplane.io/source: github.com/upbound/spaces-reference-arch
+    meta.crossplane.io/license: Apache-2.0
+    meta.crossplane.io/description: |
+      This Configuration is a platform I built to demonstrate an infrastructure cloud platform consisting of several core infra primitives.
+    meta.crossplane.io/readme: |
+      This Configuration bundles APIs for provisioning virtual machines (EC2 instances) in AWS.
+spec:
+  crossplane:
+    version: ">=v1.12.0-0"
+  dependsOn:
+    - provider: xpkg.upbound.io/upbound/provider-family-aws
+      version: ">=v0.38.0"
+    - provider: xpkg.upbound.io/upbound/provider-aws-rds
+      version: ">=v0.38.0"
+    - provider: xpkg.upbound.io/upbound/provider-aws-eks
+      version: ">=v0.38.0"
+    - provider: xpkg.upbound.io/upbound/provider-aws-iam
+      version: ">=v0.38.0"
+    - provider: xpkg.upbound.io/upbound/provider-aws-ec2
+      version: ">=v0.38.0"
+    - provider: xpkg.upbound.io/crossplane-contrib/provider-helm
+      version: ">=v0.14.0"

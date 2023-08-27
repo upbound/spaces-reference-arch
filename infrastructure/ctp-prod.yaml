@@ -1,0 +1,17 @@
+apiVersion: spaces.upbound.io/v1alpha1
+kind: ControlPlane
+metadata:
+  name: ctp-prod
+spec:
+  source:
+    git:
+      url: https://github.com/upbound/spaces-reference-arch
+      auth:
+        type: None
+      path: /controlplanes/ctp-prod/
+      pullInterval: 15s
+      ref:
+        branch: main
+  writeConnectionSecretToRef:
+    name: kubeconfig-ctp-prod
+    namespace: default

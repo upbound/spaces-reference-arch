@@ -1,0 +1,10 @@
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: configuration-acme-api
+spec:
+  package: xpkg.upbound.io/acmeco/configuration-acme-api:v0.0.1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
