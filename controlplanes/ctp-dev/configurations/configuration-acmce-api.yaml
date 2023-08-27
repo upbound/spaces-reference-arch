@@ -3,7 +3,7 @@ kind: Configuration
 metadata:
   name: configuration-acme-api
 spec:
-  package: xpkg.upbound.io/acmeco/configuration-acme-api:v0.0.1
+  package: xpkg.upbound.io/acmeco/configuration-acme-api:v0.0.1-1.g1a3afc2
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
