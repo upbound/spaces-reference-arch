@@ -1,9 +1,9 @@
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-aws-rds
+  name: upbound-provider-aws-rds
 spec:
-  package: xpkg.upbound.io/upbound/provider-aws-rds:v0.38.0
+  package: xpkg.upbound.io/upbound/provider-aws-rds:v0.39.0
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
@@ -12,9 +12,9 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-aws-eks
+  name: upbound-provider-aws-eks
 spec:
-  package: xpkg.upbound.io/upbound/provider-aws-eks:v0.38.0
+  package: xpkg.upbound.io/upbound/provider-aws-eks:v0.39.0
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
@@ -23,9 +23,9 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-aws-iam
+  name: upbound-provider-aws-iam
 spec:
-  package: xpkg.upbound.io/upbound/provider-aws-iam:v0.38.0
+  package: xpkg.upbound.io/upbound/provider-aws-iam:v0.39.0
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
@@ -34,9 +34,9 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-aws-ec2
+  name: upbound-provider-aws-ec2
 spec:
-  package: xpkg.upbound.io/upbound/provider-aws-ec2:v0.38.0
+  package: xpkg.upbound.io/upbound/provider-aws-ec2:v0.39.0
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
@@ -45,9 +45,9 @@ spec:
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-family-aws
+  name: upbound-provider-family-aws
 spec:
-  package: xpkg.upbound.io/upbound/provider-family-aws:v0.38.0
+  package: xpkg.upbound.io/upbound/provider-family-aws:v0.39.0
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
