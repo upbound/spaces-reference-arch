@@ -24,10 +24,10 @@ UPTEST_VERSION = v0.2.1
 XPKG_DIR = $(shell pwd)
 XPKG_EXAMPLES_DIR = .up/examples
 
-XPKG_REG_ORGS ?= xpkg.upbound.io/upbound
+XPKG_REG_ORGS ?= xpkg.upbound.io/acmeco
 # NOTE(hasheddan): skip promoting on xpkg.upbound.io as channel tags are
 # inferred.
-XPKG_REG_ORGS_NO_PROMOTE ?= xpkg.upbound.io/upbound
+XPKG_REG_ORGS_NO_PROMOTE ?= xpkg.upbound.io/acmeco
 XPKGS = $(PROJECT_NAME)
 -include build/makelib/xpkg.mk
 
