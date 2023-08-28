@@ -35,4 +35,4 @@ jobs:
       - name: Push to Upbound Marketplace
         uses: crossplane-contrib/xpkg-action@v0.2.0
         with:
-          command: push configuration -f apis/package.xpkg xpkg.upbound.io/${{ env.PACKAGE_NAME }}:${{ steps.tagger.outputs.VERSION_TAG }}
+          command: push configuration -f apis/package.xpkg xpkg.upbound.io/${{ vars.PACKAGE_NAME }}:${{ steps.tagger.outputs.VERSION_TAG }}
