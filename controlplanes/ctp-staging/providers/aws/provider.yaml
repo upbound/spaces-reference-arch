@@ -7,7 +7,10 @@ spec:
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
-  skipDependencyResolution: true
+  # We keep skipDependencyResolution disabled to work around a bug that
+  # prevents configuration dependencies from resolving.
+  # See https://github.com/crossplane/crossplane/issues/4588.
+  skipDependencyResolution: false
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
@@ -18,7 +21,10 @@ spec:
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
-  skipDependencyResolution: true
+  # We keep skipDependencyResolution disabled to work around a bug that
+  # prevents configuration dependencies from resolving.
+  # See https://github.com/crossplane/crossplane/issues/4588.
+  skipDependencyResolution: false
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
@@ -29,7 +35,10 @@ spec:
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
-  skipDependencyResolution: true
+  # We keep skipDependencyResolution disabled to work around a bug that
+  # prevents configuration dependencies from resolving.
+  # See https://github.com/crossplane/crossplane/issues/4588.
+  skipDependencyResolution: false
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
@@ -40,7 +49,10 @@ spec:
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
-  skipDependencyResolution: true
+  # We keep skipDependencyResolution disabled to work around a bug that
+  # prevents configuration dependencies from resolving.
+  # See https://github.com/crossplane/crossplane/issues/4588.
+  skipDependencyResolution: false
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
@@ -51,4 +63,7 @@ spec:
   packagePullPolicy: IfNotPresent
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1
-  skipDependencyResolution: true
+  # We keep skipDependencyResolution disabled to work around a bug that
+  # prevents configuration dependencies from resolving.
+  # See https://github.com/crossplane/crossplane/issues/4588.
+  skipDependencyResolution: false
