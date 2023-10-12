@@ -1,6 +1,6 @@
 # Upbound reference architecture for Spaces
 
-This reference implementation demonstrates the recommended starting (baseline) infrastructure architecture for a multi-control plane architecture built with [Upbound Spaces](https://docs-git-spaces-staging-upboundio.vercel.app/spaces/overview/). This repository's ReadMe walks through the architecture verbosely to help you understand each component of this cluster. The goal is to teach you about each layer and provide you with the knowledge necessary to apply it to your workload.
+This reference implementation demonstrates the recommended starting (baseline) infrastructure architecture for a multi-control plane architecture built with [Upbound Spaces](https://docs.upbound.io/spaces/overview/). This repository's ReadMe walks through the architecture verbosely to help you understand each component of this cluster. The goal is to teach you about each layer and provide you with the knowledge necessary to apply it to your workload.
 
 ## Core architecture components
 
@@ -18,9 +18,9 @@ This repository provides baseline manifests for three control planes and a custo
 
 Spaces are hosted in Kubernetes clusters. Deploy a Kubernetes cluster in your own cloud environment and install a Space into it. Upbound offers quick start tutorials for:
 
-- [Deploying a Space into AKS](https://docs-git-spaces-staging-upboundio.vercel.app/spaces/quickstart/azure-deploy/)
-- [Deploying a Space into GKE](https://docs-git-spaces-staging-upboundio.vercel.app/spaces/quickstart/gcp-deploy/)
-- [Deploying a Space into EKS](https://docs-git-spaces-staging-upboundio.vercel.app/spaces/quickstart/aws-deploy/) 
+- [Deploying a Space into AKS](https://docs.upbound.io/spaces/quickstart/azure-deploy/)
+- [Deploying a Space into GKE](https://docs.upbound.io/spaces/quickstart/gcp-deploy/)
+- [Deploying a Space into EKS](https://docs.upbound.io/spaces/quickstart/aws-deploy/) 
 
 ### Configure the CI pipeline
 
