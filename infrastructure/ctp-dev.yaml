@@ -2,6 +2,7 @@ apiVersion: spaces.upbound.io/v1beta1
 kind: ControlPlane
 metadata:
   name: ctp-dev
+  namespace: default
 spec:
   source:
     git:
