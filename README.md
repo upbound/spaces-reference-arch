@@ -1,3 +1,7 @@
+# Deprecation notice
+
+Go to [Spaces reference architecture](https://github.com/upbound/spaces-reference-architecture) for a new repository containing a reference architecture describing best practices for deploying a self-hosted Spaces
+
 # Upbound reference architecture for Spaces
 
 This reference implementation demonstrates the recommended starting (baseline) infrastructure architecture for a multi-control plane architecture built with [Upbound Spaces](https://docs.upbound.io/spaces/overview/). This repository's ReadMe walks through the architecture verbosely to help you understand each component of this cluster. The goal is to teach you about each layer and provide you with the knowledge necessary to apply it to your workload.
